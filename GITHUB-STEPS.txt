@@ -1,0 +1,44 @@
+QUICKNOTES GITHUB SUBMISSION STEPS (Windows PowerShell)
+
+1. Extract quicknotes-system-design.zip.
+2. Open PowerShell in the extracted quicknotes-system-design folder.
+3. Configure Git if needed:
+   git config --global user.name "Your Name"
+   git config --global user.email "your-github-email@example.com"
+
+4. Initialize and commit the files in meaningful stages:
+
+   git init
+   git branch -M main
+   git add index.html
+   git commit -m "Add initial HTML structure and form"
+   git add style.css
+   git commit -m "Add responsive styling and status states"
+   git add api.js
+   git commit -m "Add API client with GET POST and DELETE"
+   git add docs/api-design.md
+   git commit -m "Add API design doc"
+   git add docs/data-model.md
+   git commit -m "Add data model doc"
+   git add docs/architecture.md
+   git commit -m "Add architecture doc"
+   git add README.md GITHUB-STEPS.txt
+   git commit -m "Add README and submission instructions"
+
+5. Create a PUBLIC repository on GitHub named:
+   quicknotes-system-design
+   Do not initialize it with a README if you already have one locally.
+
+6. Connect and push (replace YOUR-USERNAME):
+   git remote add origin https://github.com/YOUR-USERNAME/quicknotes-system-design.git
+   git push -u origin main
+
+7. Open the GitHub repository and check that index.html, api.js, style.css,
+   README.md and the docs folder with all three Markdown files are visible.
+8. Submit:
+   https://github.com/YOUR-USERNAME/quicknotes-system-design
+
+If Git says a remote named origin already exists, check it with:
+   git remote -v
+If it points to the wrong repository, update it with:
+   git remote set-url origin https://github.com/YOUR-USERNAME/quicknotes-system-design.git
